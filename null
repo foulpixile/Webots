@@ -1,1 +1,17 @@
 
+INFO: maze_RunPY: Starting controller: "C:\Program Files\Python312\python.exe" -u maze_RunPY.py
+Traceback (most recent call last):
+  File "C:\Users\Acer\Desktop\Maze\controllers\maze_RunPY\maze_RunPY.py", line 127, in <module>
+    run_robot(my_robot)
+  File "C:\Users\Acer\Desktop\Maze\controllers\maze_RunPY\maze_RunPY.py", line 116, in run_robot
+    detected_color = detect_color()
+                     ^^^^^^^^^^^^^^
+  File "C:\Users\Acer\Desktop\Maze\controllers\maze_RunPY\maze_RunPY.py", line 50, in detect_color
+    total_red += camera.imageGetRed(image, width, y, x)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Webots\lib\controller\python\controller\camera.py", line 114, in imageGetRed
+    return image[4 * (y * width + x) + 2]
+           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range
+Searching for wall
+WARNING: 'maze_RunPY' controller exited with status: 1.
